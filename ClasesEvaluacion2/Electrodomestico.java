@@ -19,7 +19,7 @@ public class Electrodomestico {
 	protected final static double PRECIO_BASE_DEAFULT = 100000;
 	protected final static double PESO_DEAFULT = 5;
 	
-
+	// constructor por defecto
 	public Electrodomestico() {
 		this(PRECIO_BASE_DEAFULT, PESO_DEAFULT, COLOR_DEFAULT, CONSUMO_ENERGETICO_DEFAULT);
 		
@@ -27,11 +27,12 @@ public class Electrodomestico {
 		
 	}
 
+	// Un constructor con el precio y peso. El resto por defecto.
 	public Electrodomestico(double dPrecioBase, double dpeso) {
 	this(dPrecioBase, dpeso, COLOR_DEFAULT, CONSUMO_ENERGETICO_DEFAULT);
 	}
 
-
+	//Un constructor con todos los atributos.
 	public Electrodomestico(double dPrecioBase, double dpeso , String sColor, char cConsumoEnergetico ) {
 		this.dPrecioBase = dPrecioBase;
 		this.dpeso = dpeso; 
@@ -41,12 +42,12 @@ public class Electrodomestico {
 	}
 	
 	
-	
+	// getter precio base
 	public double getdPrecioBase() {
 		return dPrecioBase;
 	}
 
-
+	// setter precio base
 	public void setdPrecioBase(double dPrecioBase) {
 		if (dPrecioBase >= 0.0) {
 			
@@ -57,7 +58,7 @@ public class Electrodomestico {
 		
 	}
 
-
+	// getter color
 	public String getsColor() {
 		return sColor;
 	}
